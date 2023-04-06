@@ -15,3 +15,5 @@ class Utils(commands.Cog):
       maxRange -= 1
     await ctx.send(random.randint(minRange, maxRange))
 
+async def setup(bot):
+  await bot.add_cog(Utils(bot = bot))
